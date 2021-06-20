@@ -25,14 +25,28 @@ The design specifications for the MechaCar suspension coils dictate that the var
 ![lot_summary.png](https://github.com/kaileymd/MechaCar_Statistical_Analysis/blob/main/images/lot_summary.png)
 
 - Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+  - While the variance is low enough across all manufacturing lots when they are looked at together, when broken apart Lot 3 stands out as the only lot with a PSI variance over 100.
 
 ## T-Tests on Suspension Coils
-briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary. 
+
+### All Suspension Coils Test
+!(t-test.png)[https://github.com/kaileymd/MechaCar_Statistical_Analysis/blob/main/images/t-test.png]
+
+The results from all manufacturing lots shows a probable statistical significance, but not above a 95% confidence level (as the p-level of 6% shows) which would be the level at which such information would become actionable.
+
+### Lot 1 Test
+!(Lot1_test.png)[https://github.com/kaileymd/MechaCar_Statistical_Analysis/blob/main/images/Lot1_test.png]
+Lot 1's PSI is 1500 - an exact match to the goal PSI for MechaCar. This is show by the p-value of 1, or 100%, which indicates an exact match between the manufacturing lot's mean and the comparison value.
+
+### Lot 2 Test
+!(Lot2_test.png)[https://github.com/kaileymd/MechaCar_Statistical_Analysis/blob/main/images/Lot2_test.png]
+Lot 2's p-value is 60%, which indicates a high level of overlap between the values in Lot 2 and the comparison value of 1500.
+
+### Lot 3 Test
+!(Lot3_test.png)[https://github.com/kaileymd/MechaCar_Statistical_Analysis/blob/main/images/Lot3_test.png]
+Lot 3's p-value is 4%, which indicates a non-random chance that Lot 3's PSI is different to a statistically significant degree, above a 95% confidence level.
 
 ## Study Design: MechaCar vs Competition
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating. 
+To determine how MechaCar performs against the competition, I would look at the relationship between cost, mpg, maintenance cost, and reported sales of similar styles of car. With this information, we could calculate the overall cost of a car - or the value of it to a consumer. The goal would be to establish if a cheaper overall car has higher sales or not and see how MechaCar fits into the line-up.
 
-- What metric or metrics are you going to test?
-- What is the null hypothesis or alternative hypothesis?
-- What statistical test would you use to test the hypothesis? And why?
-- What data is needed to run the statistical test?
+The null hypothesis would state that there is no relationship between these variables. The alternate hypothesis is that there is a non-random relationship between them. To determine the relationship between these variables, I would conduct a multiple linear regression test to determine the p-values of each variable, and therefore the statistical likelihood of a non-random relationship. In the event that the null hypothesis is true, I would investigate other variables in relationship to the reported sales to determine what element of a car is most important in the sales of cars we are comparing against.
