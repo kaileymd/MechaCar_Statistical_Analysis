@@ -30,20 +30,23 @@ The design specifications for the MechaCar suspension coils dictate that the var
 ## T-Tests on Suspension Coils
 
 ### All Suspension Coils Test
-!(t-test.png)[https://github.com/kaileymd/MechaCar_Statistical_Analysis/blob/main/images/t-test.png]
+![t-test.png](https://github.com/kaileymd/MechaCar_Statistical_Analysis/blob/main/images/t-test.png)
 
 The results from all manufacturing lots shows a probable statistical significance, but not above a 95% confidence level (as the p-level of 6% shows) which would be the level at which such information would become actionable.
 
 ### Lot 1 Test
-!(Lot1_test.png)[https://github.com/kaileymd/MechaCar_Statistical_Analysis/blob/main/images/Lot1_test.png]
+![Lot1_test.png](https://github.com/kaileymd/MechaCar_Statistical_Analysis/blob/main/images/Lot1_test.png)
+
 Lot 1's PSI is 1500 - an exact match to the goal PSI for MechaCar. This is show by the p-value of 1, or 100%, which indicates an exact match between the manufacturing lot's mean and the comparison value.
 
 ### Lot 2 Test
-!(Lot2_test.png)[https://github.com/kaileymd/MechaCar_Statistical_Analysis/blob/main/images/Lot2_test.png]
+![Lot2_test.png](https://github.com/kaileymd/MechaCar_Statistical_Analysis/blob/main/images/Lot2_test.png)
+
 Lot 2's p-value is 60%, which indicates a high level of overlap between the values in Lot 2 and the comparison value of 1500.
 
 ### Lot 3 Test
-!(Lot3_test.png)[https://github.com/kaileymd/MechaCar_Statistical_Analysis/blob/main/images/Lot3_test.png]
+![Lot3_test.png](https://github.com/kaileymd/MechaCar_Statistical_Analysis/blob/main/images/Lot3_test.png)
+
 Lot 3's p-value is 4%, which indicates a non-random chance that Lot 3's PSI is different to a statistically significant degree, above a 95% confidence level.
 
 ## Study Design: MechaCar vs Competition
